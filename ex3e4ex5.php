@@ -123,3 +123,52 @@ oi
 		?>
 	</body>
 </html>
+
+<!-- exercicio 5 -->
+<?php
+	$Tipo       = array("Turma", "Disciplina", "Semana", "Professor");
+	$Turma      = array("02K01", "02J01", "02K01");
+	$Disciplina = array("Tecnilogia Web II", "Linguagem de programacao I", "Linguagem de programacao I");
+	$Semana     = array("Segunda", "Terca", "Quarta");
+	$Professor  = array("Charles", "Joao", "Charles");
+?>
+
+<html>
+
+<center>
+<table border="1" width="500">
+
+<tr>
+	<?php 
+	echo "---------- Exercicio 5 ----------<p/>";
+		  for($i=0; $i<4; $i++)
+		  { ?>
+			<td width = "180" align = "center">
+			<?php echo $Tipo[$i] ?>
+			</td>
+    <?php } ?>
+</tr>
+<?
+for($i=0; $i<=3; $i++)
+{
+?>	
+	<tr>
+		<td width = "20" align = "center">
+			<?php echo $Turma[$i] ?>
+		</td>
+		<td width = "180" align = "center">
+			<?php echo $Disciplina[$i] ?>
+		</td>
+		<td width = "180" align = "center">
+			<?php echo $Semana[$i] ?>
+		</td>
+		<td width = "180" align = "center">
+			<?php echo $Professor[$i] ?>
+		</td>				
+	</tr>
+<?
+}
+?>
+</table>
+</center>
+</html>
